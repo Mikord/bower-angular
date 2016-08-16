@@ -17715,7 +17715,7 @@ function $TimeoutProvider() {
           delete deferreds[promise.$$timeoutId];
         }
 
-        if (!skipApply) $rootScope.$apply();
+        //if (!skipApply) $rootScope.$apply();
       }, delay);
 
       promise.$$timeoutId = timeoutId;
