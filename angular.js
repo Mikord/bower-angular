@@ -1,5 +1,5 @@
 /**
- * @license AngularJS v1.5.8
+ * @license AngularJS v1.5.8-cg1
  * (c) 2010-2016 Google, Inc. http://angularjs.org
  * License: MIT
  */
@@ -19618,7 +19618,7 @@ function $TimeoutProvider() {
           delete deferreds[promise.$$timeoutId];
         }
 
-        if (!skipApply) $rootScope.$apply();
+        // if (!skipApply) $rootScope.$apply();
       }, delay);
 
       promise.$$timeoutId = timeoutId;
